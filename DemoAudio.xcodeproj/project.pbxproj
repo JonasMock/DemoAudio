@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DD114AFB20E7DAA7008A4662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114AFA20E7DAA7008A4662 /* AppDelegate.swift */; };
-		DD114AFD20E7DAA7008A4662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114AFC20E7DAA7008A4662 /* ViewController.swift */; };
+		DD114AFD20E7DAA7008A4662 /* AudioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114AFC20E7DAA7008A4662 /* AudioTableViewController.swift */; };
 		DD114B0020E7DAA7008A4662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD114AFE20E7DAA7008A4662 /* Main.storyboard */; };
 		DD114B0220E7DAA8008A4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD114B0120E7DAA8008A4662 /* Assets.xcassets */; };
 		DD114B0520E7DAA8008A4662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD114B0320E7DAA8008A4662 /* LaunchScreen.storyboard */; };
+		DD114B0D20E7E1F8008A4662 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114B0C20E7E1F8008A4662 /* RecordViewController.swift */; };
+		DD114B1320E7E919008A4662 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114B1220E7E919008A4662 /* Utility.swift */; };
+		DD114B1520E7FAF6008A4662 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114B1420E7FAF6008A4662 /* SaveViewController.swift */; };
+		DD114B1720E80888008A4662 /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD114B1620E80888008A4662 /* AudioTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD114AF720E7DAA7008A4662 /* DemoAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD114AFA20E7DAA7008A4662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD114AFC20E7DAA7008A4662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD114AFC20E7DAA7008A4662 /* AudioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewController.swift; sourceTree = "<group>"; };
 		DD114AFF20E7DAA7008A4662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD114B0120E7DAA8008A4662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD114B0420E7DAA8008A4662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD114B0620E7DAA8008A4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD114B0C20E7E1F8008A4662 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		DD114B1220E7E919008A4662 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		DD114B1420E7FAF6008A4662 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		DD114B1620E80888008A4662 /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		DD114AF920E7DAA7008A4662 /* DemoAudio */ = {
 			isa = PBXGroup;
 			children = (
+				DD114B0620E7DAA8008A4662 /* Info.plist */,
+				DD114B1120E7E8FE008A4662 /* Custom Classes */,
+				DD114B1020E7E286008A4662 /* Assets */,
+				DD114B0F20E7E27D008A4662 /* Template */,
+				DD114B0E20E7E264008A4662 /* ViewController */,
+			);
+			path = DemoAudio;
+			sourceTree = "<group>";
+		};
+		DD114B0E20E7E264008A4662 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD114AFC20E7DAA7008A4662 /* AudioTableViewController.swift */,
+				DD114B0C20E7E1F8008A4662 /* RecordViewController.swift */,
+				DD114B1420E7FAF6008A4662 /* SaveViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DD114B0F20E7E27D008A4662 /* Template */ = {
+			isa = PBXGroup;
+			children = (
 				DD114AFA20E7DAA7008A4662 /* AppDelegate.swift */,
-				DD114AFC20E7DAA7008A4662 /* ViewController.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		DD114B1020E7E286008A4662 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				DD114AFE20E7DAA7008A4662 /* Main.storyboard */,
 				DD114B0120E7DAA8008A4662 /* Assets.xcassets */,
 				DD114B0320E7DAA8008A4662 /* LaunchScreen.storyboard */,
-				DD114B0620E7DAA8008A4662 /* Info.plist */,
 			);
-			path = DemoAudio;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DD114B1120E7E8FE008A4662 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DD114B1220E7E919008A4662 /* Utility.swift */,
+				DD114B1620E80888008A4662 /* AudioTableViewCell.swift */,
+			);
+			path = "Custom Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD114AFD20E7DAA7008A4662 /* ViewController.swift in Sources */,
+				DD114B0D20E7E1F8008A4662 /* RecordViewController.swift in Sources */,
+				DD114B1520E7FAF6008A4662 /* SaveViewController.swift in Sources */,
+				DD114B1720E80888008A4662 /* AudioTableViewCell.swift in Sources */,
+				DD114B1320E7E919008A4662 /* Utility.swift in Sources */,
+				DD114AFD20E7DAA7008A4662 /* AudioTableViewController.swift in Sources */,
 				DD114AFB20E7DAA7008A4662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UBJLA8VT7;
 				INFOPLIST_FILE = DemoAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UBJLA8VT7;
 				INFOPLIST_FILE = DemoAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

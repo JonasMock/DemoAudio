@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            let importantFolder = documentDirectory.appendingPathComponent("Important")
+            let todayFolder = documentDirectory.appendingPathComponent("Today")
+            
+            try? FileManager.default.createDirectory(at: importantFolder, withIntermediateDirectories: true, attributes: nil)
+            try? FileManager.default.createDirectory(at: todayFolder, withIntermediateDirectories: true, attributes: nil)
+        }
+        
         return true
     }
 
